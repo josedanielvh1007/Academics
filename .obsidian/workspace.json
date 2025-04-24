@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archives/2024/Archives.md",
+                "file": "Archives/New.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Archives"
+              "title": "New"
             }
           }
         ]
@@ -168,8 +168,9 @@
   },
   "active": "b56343aab9a0beaf",
   "lastOpenFiles": [
+    "Archives/Archives.md",
+    "Archives/New.md",
     "Areas/Personal Growth/Personal Growth.md",
-    "Archives/2024/Archives.md",
     "Areas/University/Courses/Álgebra Lineal/Álgebra Lineal.md",
     "Areas/University/Courses/Algoritmia y Programación/Algoritmia y Programación.md",
     "Areas/University/Courses/Cálculo I/Cálculo I.md",

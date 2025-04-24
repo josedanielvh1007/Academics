@@ -1,0 +1,243 @@
+{
+  "main": {
+    "id": "b4eb327dd52ecf2c",
+    "type": "split",
+    "children": [
+      {
+        "id": "2eb4b0d48500d2c1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b56343aab9a0beaf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/Biped-Drone/Notes/Modern C++ Practice.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Modern C++ Practice"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "48d90e0654aa3368",
+    "type": "split",
+    "children": [
+      {
+        "id": "3096a3984604bfc4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4259daa59e2e130e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "3e65180525991f4c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "0da453c2faf827da",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c6257fe18dec1ace",
+    "type": "split",
+    "children": [
+      {
+        "id": "a9199a0aa48c427b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f28888d2d7bbda63",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Projects/Biped-Drone/Notes/Modern C++.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Modern C++"
+            }
+          },
+          {
+            "id": "f6f75dacaed8faf2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "3c53e493ada8ec5c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "ccc7c9561d350ec8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "floating": {
+    "id": "de5d01ebd2fa5edf",
+    "type": "floating",
+    "children": [
+      {
+        "id": "c2ec08da0cb86f72",
+        "type": "window",
+        "children": [
+          {
+            "id": "c613b222430882ad",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "4915901f17a56a71",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Projects/Biped-Drone/Notes/Modern C++.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Modern C++"
+                }
+              },
+              {
+                "id": "fc247f5c7fa1a591",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Projects/Biped-Drone/Notes/Modern C++ Practice.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Modern C++ Practice"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 960,
+        "y": 27,
+        "width": 960,
+        "height": 1173,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "4915901f17a56a71",
+  "lastOpenFiles": [
+    "Projects/Biped-Drone/Notes/Modern C++ Practice.md",
+    "Projects/Biped-Drone/Notes/Modern C++.md",
+    "Modern C++ Practice Codes.md",
+    "Areas/University/Courses/Formación Ciudadana III/Conceptos de Paz.md",
+    "Projects/Biped-Drone/Code/hello",
+    "Projects/Biped-Drone/Code/hello.cpp",
+    "Untitled.canvas",
+    "Areas/University/Schedule.md",
+    "Projects/Biped-Drone/Readme.md",
+    "Projects/Biped-Drone/Notes",
+    "Archives/2024",
+    "Resources/Templates",
+    "Areas/Personal Growth",
+    "Areas/University/Courses/Formación Ciudadana III",
+    "Areas/University/Courses/Formación Ciudadana II",
+    "Areas/University/Courses/Cálculo I",
+    "Areas/University/Courses/Diseño Conceptual",
+    "Areas/University/schedule.md"
+  ]
+}

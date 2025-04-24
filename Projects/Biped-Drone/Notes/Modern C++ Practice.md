@@ -1,5 +1,13 @@
-#projects #biped-drone #notes 
-**Relationships**: [[Modern C++]]
+---
+tags:
+  - projects
+  - biped-drone
+  - notes
+topic: modern C++
+date_created: 
+date_modified: 
+---
+
 ___
 ## Basic Print
 ~~~

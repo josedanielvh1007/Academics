@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archives/New.md",
+                "file": "Archives/2024/New.md",
                 "mode": "source",
                 "source": true
               },
@@ -166,10 +166,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b56343aab9a0beaf",
+  "active": "4259daa59e2e130e",
   "lastOpenFiles": [
     "Archives/Archives.md",
-    "Archives/New.md",
+    "Archives/2024/New.md",
     "Areas/Personal Growth/Personal Growth.md",
     "Areas/University/Courses/Álgebra Lineal/Álgebra Lineal.md",
     "Areas/University/Courses/Algoritmia y Programación/Algoritmia y Programación.md",

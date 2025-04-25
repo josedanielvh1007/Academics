@@ -21,18 +21,22 @@ tags:
 - Sistemas homogéneos.
 - Inversa de una matriz e inversa de una matriz de coeficientes.
 - Regla de Crammer.
+
 **Módulo 2**: Vectores en el plano y el espacio.
 - *Proyecciones*: Producto punto y producto cruz.
 - Aplicaciones con problemas afines a la ingeniería.
 - *Espacio*: $\mathbb{R}^3$ (3 dimensiones).
+
 **Módulo 3**: Espacios vectoriales.
 - Definición.
 - Subespacios.
 - Bases y cambio de bases.
 - Núcleo y rango de una matriz.
+
 **Módulo 4**: Transformaciones lineales.
 - Interpretaciones geométricas.
 - Representación matricial de una trasnformación lineal.
+
 **Módulo 5**: Valores y vectores propios.
 - Cálculo de calores y vectores propios.
 - Diagonalización.

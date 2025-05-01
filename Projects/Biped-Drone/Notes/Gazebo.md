@@ -189,6 +189,32 @@ Setup the `physics`:
 <plugin filename="EntityTree" name="Entity tree">
 </plugin>
 ```
+>_Sensor plugins_
+>_Note:_ Use with `Physics` plugin and `SceneBroadcaster` plugin
+
+`imu sensor`plugin:
+
+```
+<plugin filename="gz-sim-imu-system"
+        name="gz::sim::systems::Imu">
+</plugin>
+```
+```  
+<!--Add the sensor to the robot-->
+<sensor name="imu_sensor" type="imu">
+    <always_on>1</always_on>
+    <update_rate>1</update_rate>
+    <visualize>true</visualize>
+    <topic>imu</topic>
+</sensor>
+```
+`contact sensor` plugin:
+```
+<plugin filename="gz-sim-contact-system"
+        name="gz::sim::systems::Contact">
+</plugin>
+```
+```
 ### GUI
 Under the `<gui>` tab we should specify anything related to the GUI.
 ```

@@ -4,9 +4,9 @@ tags:
   - biped-drone
   - notes
 topic: modern C++
-date_created: 
-date_modified: 
-backlinks: 
+date_created: 2025-04-25
+date_modified: 2025-04-28
+backlinks:
 ---
 
 Foundation of many modern technologies. It is a multi paradigm programming language that supports generic programming and low-level manipulation, function overloading, and the four primary features of *Object Oriented Programming*:

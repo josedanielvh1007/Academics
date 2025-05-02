@@ -2,7 +2,7 @@
 date: 
 course: 
 topic: 
-engagement: (1–5)
+engagement: (1-5)
 tags:
   - resources
   - templates

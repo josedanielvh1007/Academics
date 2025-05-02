@@ -1,0 +1,12 @@
+{
+  "readableLineLength": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "Letter",
+    "landscape": true,
+    "margin": "0",
+    "downscalePercent": 60
+  },
+  "strictLineBreaks": false,
+  "alwaysUpdateLinks": true
+}

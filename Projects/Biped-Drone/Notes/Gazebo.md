@@ -190,7 +190,7 @@ Setup the `physics`:
 </plugin>
 ```
 >_Sensor plugins_
->_Note:_ Use with `Physics` plugin and `SceneBroadcaster` plugin
+>_Note:_ Use with `Physics` and `SceneBroadcaster` plugin
 
 `imu sensor`plugin:
 
@@ -214,7 +214,51 @@ Setup the `physics`:
         name="gz::sim::systems::Contact">
 </plugin>
 ```
+`lidar sensor`plugin:
 ```
+<frame name="lidar_frame" attached_to='chassis'>
+    <pose>0.8 0 0.5 0 0 0</pose>
+</frame>
+```
+```
+<plugin
+  filename="gz-sim-sensors-system"
+  name="gz::sim::systems::Sensors">
+  <render_engine>ogre2</render_engine>
+</plugin>
+```
+ ```
+ <sensor name='gpu_lidar' type='gpu_lidar'>"
+    <pose relative_to='lidar_frame'>0 0 0 0 0 0</pose>
+    <topic>lidar</topic>
+    <update_rate>10</update_rate>
+    <ray>
+        <scan>
+            <horizontal>
+                <samples>640</samples>
+                <resolution>1</resolution>
+                <min_angle>-1.396263</min_angle>
+                <max_angle>1.396263</max_angle>
+            </horizontal>
+            <vertical>
+                <samples>1</samples>
+                <resolution>0.01</resolution>
+                <min_angle>0</min_angle>
+                <max_angle>0</max_angle>
+            </vertical>
+        </scan>
+        <range>
+            <min>0.08</min>
+            <max>10.0</max>
+            <resolution>0.01</resolution>
+        </range>
+    </ray>
+    <always_on>1</always_on>
+    <visualize>true</visualize>
+</sensor>
+```
+
+
 ### GUI
 Under the `<gui>` tab we should specify anything related to the GUI.
 ```
@@ -226,23 +270,6 @@ Under the `<gui>` tab we should specify anything related to the GUI.
 >_For example:
 ```
 <!-- 3D scene -->
-<plugin filename="MinimalScene" name="3D View">
-  <gz-gui>
-    <title>3D View</title>
-    <property type="bool" key="showTitleBar">false</property>
-    <property type="string" key="state">docked</property>
-  </gz-gui>
-
-  <engine>ogre2</engine>
-  <scene>scene</scene>
-  <ambient_light>0.4 0.4 0.4</ambient_light>
-  <background_color>0.8 0.8 0.8</background_color>
-  <camera_pose>-6 0 6 0 0.5 0</camera_pose>
-  <camera_clip>
-    <near>0.25</near>
-    <far>25000</far>
-  </camera_clip>
-</plugin>
 <plugin filename="GzSceneManager" name="Scene Manager">
   <gz-gui>
     <property key="resizable" type="bool">false</property>
@@ -281,8 +308,8 @@ To include a model inside the `URI`:
 </include>
 ```
 *Model link*: 
-- *Link*: `https://fuel.gazebosim.org/1.0/OpenRobotics/models/Coke`
-- *File*: `model://Coke`
+- Link: `https://fuel.gazebosim.org/1.0/OpenRobotics/models/Coke`
+- File: `model://Coke`
 >_If want to spawn multiple_
 ```
 <include>
@@ -290,9 +317,14 @@ To include a model inside the `URI`:
 	<pose>0 0 0 0 0 0</pose>
 	<uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Coke</uri>
 </include>
+```
+```
 <include>
 	<name>Coke1</name>
 	<pose>0 0.1 0 0 0 0</pose>
 	<uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Coke</uri>
 </include>
 ```
+
+
+

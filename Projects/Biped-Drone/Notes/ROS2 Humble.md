@@ -8,6 +8,7 @@ tags:
   - biped-drone
   - notes
 ---
+**Relationships:** [[Projects/Biped-Drone/Notes/Modern C++|Modern C++]] [[Projects/Biped-Drone/Notes/Modern C++ Practice|Modern C++ Practice]]
 # ROS 2 Humble
 ROS2 is a node communication protocol used to interchange data. It consists of a set of nodes and its message interchange protocols.
 *Node*: Each one is set for an unique purpose. It can send/receive data through topics, services, parameters, and actions. A single executable can contain several nodes.
@@ -58,7 +59,7 @@ To be able to work with ROS2 Humble, it is necessary to start a workspace in the
 *Within the Workspace*: `ros2 pkg create <nameofpackage>`
 - Actions must be created within the `actions`directory of the package and are `.action`.
 - They are defined in the form
-	```
+	```action
 	# Request
 	---
 	# Result
@@ -69,7 +70,7 @@ To be able to work with ROS2 Humble, it is necessary to start a workspace in the
 	- `result`messages is sent from an action server to client when the action is done.
 	- `feedback`periodical messages from action server to client updates about a goal.
 - Add the action to the `CMakeLists.cmake`file:
-	```
+	```cmake
 	find_package(rosidl_default_generators REQUIRED)
 	
 	rosidl_generate_interfaces(${PROJECT_NAME}
@@ -77,7 +78,7 @@ To be able to work with ROS2 Humble, it is necessary to start a workspace in the
 	) 
 	```
 - Add the required dependencies to the `package.xml`file:
-	```
+	```xml
 	<buildtool_depend>rosidl_default_generators</buildtool_depend>
 	
 	<depend>action_msgs</depend>

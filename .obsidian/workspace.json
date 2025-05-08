@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Biped-Drone/Notes/Action Servers and Clients.md",
-                "mode": "source",
+                "file": "Projects/Biped-Drone/Notes/Clients and Servers Code C++.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Action Servers and Clients"
+              "title": "Clients and Servers Code C++"
             }
           }
         ]
@@ -166,63 +166,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "floating": {
-    "id": "dad603c52ff22623",
-    "type": "floating",
-    "children": [
-      {
-        "id": "73c3cfb86609ae54",
-        "type": "window",
-        "children": [
-          {
-            "id": "1fa1036299de29dd",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "919aa3c4d2288e20",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Projects/Biped-Drone/Notes/Action Servers and Clients.md",
-                    "mode": "preview",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Action Servers and Clients"
-                }
-              },
-              {
-                "id": "42e63f769eb8f35c",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Projects/Biped-Drone/Notes/ROS2 Humble.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "ROS2 Humble"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 960,
-        "y": 27,
-        "width": 960,
-        "height": 1173,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "919aa3c4d2288e20",
+  "active": "ad9f5a71446ae835",
   "lastOpenFiles": [
+    "Projects/Biped-Drone/Notes/Gazebo.md",
+    "Projects/Biped-Drone/Notes/Modern C++.md",
+    "Projects/Biped-Drone/Notes/Modern C++ Practice.md",
     "Projects/Biped-Drone/Notes/ROS2 Humble.md",
     "Projects/Biped-Drone/Notes/Action Servers and Clients.md",
+    "Projects/Biped-Drone/Notes/Clients and Servers Code C++.md",
+    "Areas/University/RAS Seedbed/Notes/Modern C++.md",
+    "Areas/University/RAS Seedbed/Codes/C++ Practice 1.md",
+    "Archives/2024/New.md",
     "Projects/Biped-Drone/Notes/action_tutorials_interfaces/action/Fibonacci.action",
     "Projects/Biped-Drone/Notes/action_tutorials_interfaces/action",
     "Projects/Biped-Drone/Notes/action/Fibonacci.action",
@@ -233,7 +187,6 @@
     "Projects/Biped-Drone/Notes/action_tutorials_interfaces/src",
     "Projects/Biped-Drone/Notes/action_tutorials_interfaces/package.xml",
     "Projects/Biped-Drone/Notes/action_tutorials_interfaces",
-    "Projects/Biped-Drone/Notes/Gazebo.md",
     "Areas/Personal Growth/Habilidades Ingeniería.md",
     "Areas/Personal Growth/Personal Growth.md",
     "Areas/University/Courses/Formación Ciudadana III/Peace Initiatives.md",
@@ -252,11 +205,6 @@
     "university/Areas/University/Courses/Diseño Conceptual/Diseño Conceptual.md",
     "university/Areas/University/Courses/Cálculo I/Cálculo I.md",
     "university/Areas/University/Courses/Algoritmia y Programación/Algoritmia y Programación.md",
-    "university/Areas/Personal Growth/Personal Growth.md",
-    "university/Archives/2024/New.md",
-    "university/Archives/Archives.md",
-    "2025-04-28.md",
-    "Projects/Biped-Drone/Notes/Modern C++.md",
     "Projects/Biped-Drone/Notes/ros_tutorials/turtlesim/images/rolling.png",
     "Projects/Biped-Drone/Notes/ros_tutorials/turtlesim/images/humble.png",
     "Projects/Biped-Drone/Notes/ros_tutorials/turtlesim/images/galactic.png",
@@ -266,7 +214,6 @@
     "Projects/Biped-Drone/Notes/ros_tutorials/turtlesim/images/crystal.png",
     "Projects/Biped-Drone/Notes/ros_tutorials/turtlesim/images/bouncy.png",
     "Projects/Biped-Drone/Notes/ros_tutorials/turtlesim/images/ardent.png",
-    "Projects/Biped-Drone/Notes/Modern C++ Practice.md",
     "Resources/Templates/Canvas Template.canvas",
     "Untitled.canvas"
   ]

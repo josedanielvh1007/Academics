@@ -43,7 +43,7 @@ To check the action definition: `ros2 interface show <path_to_the_action>` (if i
 Actions are a form of asynchronous communication in ROS. Clients send goal requests to the servers, and the servers send goal feedback and results to action clients. The first step to create an action server/client is to define a new package and setup the dependencies to the other packages (**important!**).
 ## 1. Visibility control
 To make the package work it is necessary to add a `visibility_control.h` file. Adapted from [https://gcc.gnu.org/wiki/Visibility]():
-```
+```h
 #ifndef ACTION_TUTORIALS_CPP__VISIBILITY_CONTROL_H_
 #define ACTION_TUTORIALS_CPP__VISIBILITY_CONTROL_H_
 
@@ -95,7 +95,7 @@ Code snippets can be written either in python or in C++
 >_Example: [Writing the action server code - ROS humble documentation](https://docs.ros.org/en/humble/Tutorials/Intermediate/Writing-an-Action-Server-Client/Cpp.html#writing-the-action-server-code)_
 
 First, it is necessary to include in the program the code dependencies:
-```
+```cpp
 #include <functional>
 #include <memory>
 #include <thread>
@@ -110,11 +110,11 @@ namespace action_tutorials_cpp   // Package name
 {
 ```
 Next, create a class derived of `rclpp::Node` :
-```
+```cpp
 class FibonacciActionServer : public rclcpp::Node
 ```
 And initialize the node from the class:
-```
+```cpp
   explicit FibonacciActionServer(const rclcpp::NodeOptions & options = rclcpp::NodeOptions())
   : Node("fibonacci_action_server", options)
   ```

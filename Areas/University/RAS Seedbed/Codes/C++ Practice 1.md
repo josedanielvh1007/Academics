@@ -10,7 +10,7 @@ date_modified:
 
 ___
 ## Basic Print
-~~~
+~~~cpp
 #include <iostream>
 using namespace std;
 int main(){
@@ -19,7 +19,7 @@ int main(){
 }
 ~~~
 ## Data Receiving
-~~~
+~~~cpp
 #include <iostream>
 using namespace std;
 int main() {

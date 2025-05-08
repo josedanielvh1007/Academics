@@ -13,7 +13,7 @@ To define a model is used an *SDF* file (Simulation Description Format), an XML 
 >_Essential definition of a model_
 
 *Important*: Dimensions are in meters and angles are in radians.
-```
+```xml
 <model name="model_name" canonical_link="canonical_link"
 	<pose relative_to="element">x y z r p y</pose>
 	<link name="link_name">
@@ -57,13 +57,13 @@ To define a model is used an *SDF* file (Simulation Description Format), an XML 
 Please note that `links` are each component that are part of the model.
 ### Defining a frame
 Inside the model:
-```
+```xml
 <frame name="frame_name" attached_to="canonical_link">
 	<pose>x y z r p y</pose>
 </frame>
 ```
 ### Establishing joints
-```
+```xml
 <joint name="joint_name" type="joint_type">
 	<pose relative_to="element"/>
 	<parent> </parent>
@@ -75,7 +75,7 @@ Inside the model:
 *Joint types*: `revolute` (upper/lower limits), `continuous`, `prismatic` (slides along the axis), `fixed` (no movement), `floating`, `planar` (motion in a plane perpendicular to the axis).
 ## Robot movement
 To be able to move the robot, it is necessary to specify the topic:
-```
+```xml
 <plugin
     filename="libignition-gazebo-diff-drive-system.so"
     name="ignition::gazebo::systems::--drive-type--">
@@ -87,7 +87,7 @@ To be able to move the robot, it is necessary to specify the topic:
 **To move from terminal**: `gz topic -t "/cmd_vel" -m gz.msgs.Twist -p "linear: {x: 0.5}, angular: {z: 0.05}"`
 ## Defining a world
 Every SDF world should start with the tags:
-```
+```xml
 <?xml version="1.0" ?>
 <sdf version="1.8">
     <world name="world_demo">
@@ -98,7 +98,7 @@ Every SDF world should start with the tags:
 ```
 Setup the `physics`:
 
-```
+```xml
 <physics name="1ms" type="ignored">
     <max_step_size>0.001</max_step_size>
     <real_time_factor>1.0</real_time_factor>
@@ -108,21 +108,21 @@ Setup the `physics`:
 >_For model control_
 
 `Physics`plugin:
-```
+```xml
 <plugin
     filename="gz-sim-physics-system"
     name="gz::sim::systems::Physics">
 </plugin>
 ```
 `UserCommands`plugin:
-```
+```xml
 <plugin
     filename="gz-sim-user-commands-system"
     name="gz::sim::systems::UserCommands">
 </plugin>
 ```
 `SceneBroadcaster` plugin:
-```
+```xml
 <plugin
     filename="gz-sim-scene-broadcaster-system"
     name="gz::sim::systems::SceneBroadcaster">
@@ -131,7 +131,7 @@ Setup the `physics`:
 >_For world control_
 
 `World Control` plugin:
-```
+```xml
 <!-- World control -->
 <plugin filename="WorldControl" name="World control">
     <gz-gui>
@@ -157,7 +157,7 @@ Setup the `physics`:
 </plugin>
 ```
 `World Stats` plugin:
-```
+```xml
 <!-- World statistics -->
 <plugin filename="WorldStats" name="World stats">
     <gz-gui>
@@ -184,7 +184,7 @@ Setup the `physics`:
 </plugin>
 ```
 `Entity tree`plugin:
-```
+```xml
 <!-- Entity tree -->
 <plugin filename="EntityTree" name="Entity tree">
 </plugin>
@@ -194,12 +194,12 @@ Setup the `physics`:
 
 `imu sensor`plugin:
 
-```
+```xml
 <plugin filename="gz-sim-imu-system"
         name="gz::sim::systems::Imu">
 </plugin>
 ```
-```  
+```  xml
 <!--Add the sensor to the robot-->
 <sensor name="imu_sensor" type="imu">
     <always_on>1</always_on>
@@ -209,25 +209,25 @@ Setup the `physics`:
 </sensor>
 ```
 `contact sensor` plugin:
-```
+```xml
 <plugin filename="gz-sim-contact-system"
         name="gz::sim::systems::Contact">
 </plugin>
 ```
 `lidar sensor`plugin:
-```
+```xml
 <frame name="lidar_frame" attached_to='chassis'>
     <pose>0.8 0 0.5 0 0 0</pose>
 </frame>
 ```
-```
+```xml
 <plugin
   filename="gz-sim-sensors-system"
   name="gz::sim::systems::Sensors">
   <render_engine>ogre2</render_engine>
 </plugin>
 ```
- ```
+ ```xml
  <sensor name='gpu_lidar' type='gpu_lidar'>"
     <pose relative_to='lidar_frame'>0 0 0 0 0 0</pose>
     <topic>lidar</topic>
@@ -261,14 +261,14 @@ Setup the `physics`:
 
 ### GUI
 Under the `<gui>` tab we should specify anything related to the GUI.
-```
+```xml
 <gui fullscreen="0">
     ...
     ...
 </gui>
 ```
 >_For example:
-```
+```xml
 <!-- 3D scene -->
 <plugin filename="GzSceneManager" name="Scene Manager">
   <gz-gui>
@@ -283,7 +283,7 @@ Under the `<gui>` tab we should specify anything related to the GUI.
 *3D World displaying*: `MinimalScene` and `GzSceneManager`.
 *Rendering engine*: `ogre`or `ogre2`.
 Setup the `light`:
-```
+```xml
 <light type="directional" name="sun">
     <cast_shadows>true</cast_shadows>
     <pose>0 0 10 0 0 0</pose>
@@ -300,7 +300,7 @@ Setup the `light`:
 ```
 ## Including models
 To include a model inside the `URI`:
-```
+```xml
 <include>
     <uri>
     <!--link to the model-->
@@ -311,14 +311,14 @@ To include a model inside the `URI`:
 - Link: `https://fuel.gazebosim.org/1.0/OpenRobotics/models/Coke`
 - File: `model://Coke`
 >_If want to spawn multiple_
-```
+```xml
 <include>
 	<name>Coke0</name>
 	<pose>0 0 0 0 0 0</pose>
 	<uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Coke</uri>
 </include>
 ```
-```
+```xml
 <include>
 	<name>Coke1</name>
 	<pose>0 0.1 0 0 0 0</pose>
